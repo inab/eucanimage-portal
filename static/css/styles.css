@@ -1,0 +1,191 @@
+.logo {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+.navbar {
+  background-color: #fff;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 150px;
+  padding: 1.5rem 2rem;
+  transition:
+    height .6s ease,
+    padding .6s ease;
+  display: flex;
+  align-items: center;
+}
+
+.navbar.shrink {
+  height: 90px;
+  padding: 0.5rem 2rem;
+}
+
+
+.navbar.preload {
+  transition: none !important;
+  height: 90px;
+}
+  
+
+.logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: white;
+  text-decoration: none;
+  padding: 0.1rem 6% 1rem 1rem;
+  height: 90px;
+}
+
+.logo img {
+  height: 90px;
+  transition: height 0.6s ease;
+}
+
+.navbar.not-home img {
+  height: 45px;
+} 
+
+.navbar.not-home .logo {
+  height: 45px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-links {
+  display: flex;
+  flex-grow: 1 !important;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  color: #123a60;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nav-links a {
+  color: #123a60;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: none;
+  color: #338a9d;
+}
+
+.nav-links a.active {
+  color: #123a60;
+  font-weight: 700;
+  position: relative;
+}
+
+.bg-custom-blue {
+  background-color: #123a60;
+}
+
+.bg-custom-green {
+  background-color: #338a9d;
+}
+
+.social-links {
+  max-width: 40px;
+}
+.footer-centered {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: white;
+}
+
+.footer-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-logo {
+  height: 48px;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.footer-logo:hover {
+  opacity: 1;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: white;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo img {
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.05);
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ffcc00;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}

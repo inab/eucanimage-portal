@@ -1,0 +1,7 @@
+<div class="social-links flex gap-3">
+  {{ with .Site.Params.Social.twitter }}
+    <a href="{{ . }}" target="_blank" aria-label="Twitter">
+      <img src="/images/social-media_x.png" alt="Twitter" class="social-icon" />
+    </a>
+  {{ end }}
+</div>

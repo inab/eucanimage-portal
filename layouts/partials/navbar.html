@@ -1,0 +1,14 @@
+<nav class="navbar preload {{ if not .IsHome }} not-home{{ end }}">
+	<div class="container">
+		<a href="/" class="logo {{ if not .IsHome }} not-home{{ end }}">
+      <img src="{{ .Site.Params.site_logo | relURL }}" alt="{{ .Site.Title }}" />		
+    </a>
+		<ul class="nav-links">
+			<li><a href="/" class="{{ if eq .Page.RelPermalink "/" }}active{{ end }}">Home</a></li>
+			<li><a href="/explore" class="{{ if eq .Page.RelPermalink "/explore/" }}active{{ end }}">Explore Data</a></li>
+			<li><a href="/ai" class="{{ if eq .Page.RelPermalink "/ai/" }}active{{ end }}">AI in Cancer</a></li>
+			<li><a href="/data" class="{{ if eq .Page.RelPermalink "/data/" }}active{{ end }}">Data Submission</a></li>
+			<li><a href="/support" class="{{ if eq .Page.RelPermalink "/support/" }}active{{ end }}">Support</a></li>
+		</ul>
+	</div>
+</nav>
