@@ -28,10 +28,8 @@
 }
 
 .hero-button {
-  background-color: #338a9d;
-  border-color: #338a9d;
-  border-width: 2px;
-  border-style: solid;
+  background-color: #007da7;
+  border: 2px solid #007da7;
   color: white;
   padding: 0.75rem 2rem;
   border-radius: 2rem;
@@ -39,10 +37,10 @@
   margin-top: 1rem;
   text-decoration: none;
 }
+
 .hero-button:hover {
-  background-color: transparent;
-  color: #338a9d !important;
-  transition: all ease-in .2s;
+  background-color: white;
+  color: #007da7;
 }
 
 .home {
@@ -53,7 +51,6 @@
  background-color: white;
  padding-top: 40px;
 }
-
 .overview {
   display: flex;
   color: #003c5f;
@@ -62,19 +59,10 @@
 
 .overview .overview-left .overview-title {
   font-weight: 700;
-  font-size: 20px;
-}
-
-.overview .overview-left,
-.overview .overview-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .overview-right img {
-  max-height: 450px;
+  max-height: 350px;
 }
 
 .home-subheader {

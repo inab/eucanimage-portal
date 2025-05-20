@@ -1,0 +1,157 @@
+.explore-header {
+  min-height: 400px;
+  background-color: #F2F2F2;
+}
+
+.hero-pages-content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.hero-image-border {
+  width: calc(50%);
+  height: 400px;
+  background: linear-gradient(to bottom right, #348A9A, #48998B);
+  display: inline-block;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.hero-clipped-border {
+  position: relative;
+  width: 60%;
+  height: 400px;
+  background: linear-gradient(to bottom right, #348A9A, #48998B);
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  overflow: hidden;
+}
+
+.hero-clipped-border::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  right: 20px;
+  bottom: 5px;
+  margin-right: 10px;
+  background-color: white;
+  background-image: url('/images/pages.jpg');
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.hero-pages-image {
+  background-image: url('/images/pages.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 92%;
+  height: 400px;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.hero-pages-text {
+  width: 40%;
+  color: #003c5f;
+  padding: 10px 25px;
+}
+
+.hero-pages-text h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.hero-pages-text .subtitle {
+  font-size: 20px;
+}
+
+.section-discovery {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.section-discovery-wrapper {
+  display: flex;
+  gap: 2rem;
+  padding: 15px 20px;
+  border: 3px solid #F2F2F2;
+  border-radius: 5px;
+}
+
+.repositories-wrapper {
+  display: block;
+}
+.section-discovery-wrapper h2 {
+  color: #123a60;
+  font-weight: bold;
+}
+
+.discovery-card-box {
+  display: flex;
+  gap: 2rem;
+  padding: 15px 20px 20px;
+  border: 3px solid #F2F2F2;
+  border-radius: 5px;
+}
+
+.discovery-text {
+  flex: 2;
+  padding: 15px 20px;
+}
+
+.discovery-text li,
+.discovery-card li {
+  list-style:none;
+}
+
+.discovery-card li {
+  text-align: left;
+}
+
+.discovery-card a {
+  color: #338a9d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.discovery-text li img,
+.discovery-card li img {
+  height: 20px;
+  padding-right: 10px;
+}
+
+.discovery-card {
+  padding: 15px;
+  flex: 1;
+}
+.discovery-card-wrapper {
+  height: 100%;
+  background: #e4eef1;
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px 10px 25px;
+}
+
+.discovery-card 
+
+.discovery-card-wrapper img {
+  max-height: 100px;
+}
+
+.discovery-card .btn-go {
+  display: inline-block;
+  width: 90%;
+  margin-top: 1rem;
+  background: #007b7f;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.discovery-card .btn-go:hover {
+  background: #005e61;
+}

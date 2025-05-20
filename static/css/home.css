@@ -29,12 +29,18 @@
 
 .hero-button {
   background-color: #007da7;
+  border: 2px solid #007da7;
   color: white;
   padding: 0.75rem 2rem;
   border-radius: 2rem;
   display: inline-block;
   margin-top: 1rem;
   text-decoration: none;
+}
+
+.hero-button:hover {
+  background-color: white;
+  color: #007da7;
 }
 
 .home {

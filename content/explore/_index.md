@@ -1,6 +1,8 @@
 ---
 title: "Explore Data"
-description: "Browse cancer datasets available through the platform."
+description: "Explore key services that support clinicians and researchers in discovering and accessing EuCanImage data through dedicated subsections"
 ---
 
-TODO *Explore Data*.
+{{< explore/discover-section >}}
+
+{{< explore/discover-repositories >}}
