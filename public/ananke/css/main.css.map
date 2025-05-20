@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/src",
+	"sourceRoot": "C:/BSC/others/eucanimage-platform/eucanimage-portal/eucanimage-portal",
 	"sources": [
 		"ananke/css/main.css"
 	],

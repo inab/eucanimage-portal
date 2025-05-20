@@ -1,0 +1,75 @@
+{{ define "main" }}
+<main class="home-page">
+  <section class="home-header">
+    <div class="container">
+      <div class="overview">
+        <div class="overview-left col-5">
+          <p class="overview-title">
+            A trusted data management and curation platform for enhancing AI cancer imaging 
+          </p>
+          <p class="overview-subtitle">
+            leveraging the most established, secure and tested data infrastructures and curation tools
+          </p>
+        </div>
+        <div class="overview-right col-7">
+          <img src="images/home-diagram-enlarged.png" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="home-subheader">
+    <div class="container">
+      <div>
+        <a class="home-link" href="https://eucanimage.eu/">EuCanImage consorcium</a> has built a secure, federated and large-scale Europena cancer platform, with capabilities to greatly enhance the potential of artificial 
+        intelligence (AI) in oncology. As a result, completely new data resources <span>over 250,000 single subjects</span> are being curated, annotated and made public 
+        at the platform to investigate unmet clinical needs. The platform includes:
+      </div>
+      <div class="cta-buttons">
+        <div>
+          <div>
+
+          </div>
+          <div>
+            <div>
+              <img src="images/explore-data.png" />
+            </div>
+            <div>
+              Novel curated and annotated imaging data cross-linked to biological and health records.
+            </div>
+          </div>
+          <a href="/explore" class="btn">Explore Data</a>
+        </div>
+        <div>
+          <div>
+            <img src="images/discover-data.png" />
+          </div>
+          <div>
+            Multi-scale AI solutions that integrate organ-level, molecular & clinical predictors for cancer fingerprints
+          </div>
+          <a href="/ai" class="btn">AI in Cancer Imaging</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h2>What you can do</h2>
+      <ul>
+        <li>Browse curated cancer datasets</li>
+        <li>Access AI tools for medical imaging</li>
+        <li>Discover insights through interactive dashboards</li>
+        <li>Read documentation and case studies</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Render any Markdown content from _index.md -->
+  <section class="additional-content">
+    <div class="container">
+      {{ .Content }}
+    </div>
+  </section>
+
+</main>
+{{ end }}

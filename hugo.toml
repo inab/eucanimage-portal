@@ -3,9 +3,11 @@ languageCode = 'en-us'
 title = 'EuCanImage Portal'
 theme = "ananke"
 
+
 [params]
   site_logo = "/images/logo.svg"
   background_color_class = "bg-custom-blue"
+  favicon = "/images/favicon.ico"
 
 [params.Social]
   twitter = "https://x.com/EuCanImage"
