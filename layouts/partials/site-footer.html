@@ -1,0 +1,12 @@
+<footer class="footer-centered {{ .Site.Params.background_color_class | compare.Default "bg-dark" }}" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-text">
+       &copy; EuCanImage {{ now.Format "2006" }}
+    </div>
+    <div class="footer-social">
+      {{ partial "social/follow.html" . }}
+    </div>
+  </div>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/navbar-shrink.js"></script>
+</footer>

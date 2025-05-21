@@ -15,13 +15,12 @@ RUN apt-get update && \
     rm -rf hugo.tar.gz LICENSE README.md && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /src
+WORKDIR /app
 
-COPY .git /src/.git
-COPY .gitmodules /src/.gitmodules
-COPY . /src
+COPY . /app
 
-RUN git submodule update --init --recursive
+RUN rm -rf themes/ananke && \
+    git clone --depth 1 https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
 
 EXPOSE 1313
 
