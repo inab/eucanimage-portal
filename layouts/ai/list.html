@@ -1,15 +1,19 @@
 {{ define "main" }}
 <section class="explore-hero">
-  <div class="container">
+  <div class="w-100">
     <header class="explore-header">
-      <h1 class="title">{{ .Title }}</h1>
-      {{ with .Params.description }}
-        <p class="subtitle">{{ . }}</p>
-      {{ end }}
+      <div class="hero-pages-content-container">
+        <div class="hero-clipped-border"></div>
+        <div class="hero-pages-text">
+          <h1 class="title">{{ .Title }}</h1>
+          {{ with .Params.description }}
+            <p class="subtitle">{{ . }}</p>
+          {{ end }}
+        </div>
+      </div>
     </header>
 
-    <!-- Aquí va el contenido adicional -->
-    <div class="content">
+    <div class="content container">
       {{ .Content }}
     </div>
   </div>

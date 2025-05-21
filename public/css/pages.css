@@ -3,6 +3,10 @@
   background-color: #F2F2F2;
 }
 
+main {
+  padding-bottom: 120px;
+}
+
 .hero-pages-content-container {
   display: flex;
   flex-direction: row;
@@ -10,6 +14,7 @@
   justify-content: space-between;
   margin: 0 auto;
   flex-wrap: wrap;
+  box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
 }
 
 .hero-image-border {
@@ -73,12 +78,17 @@
   padding-bottom: 50px;
 }
 
+.section-repositories {
+  padding-bottom: 50px;
+}
+
 .section-discovery-wrapper {
   display: flex;
   gap: 2rem;
   padding: 15px 20px;
-  border: 3px solid #F2F2F2;
+  border: 1px solid #F2F2F2;
   border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;  
 }
 
 .repositories-wrapper {
@@ -93,13 +103,20 @@
   display: flex;
   gap: 2rem;
   padding: 15px 20px 20px;
-  border: 3px solid #F2F2F2;
   border-radius: 5px;
+}
+
+.discovery-card-box.medium-card {
+  gap: 5rem;
+  padding: 5px 70px 20px;
 }
 
 .discovery-text {
   flex: 2;
   padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .discovery-text li,
@@ -111,10 +128,15 @@
   text-align: left;
 }
 
-.discovery-card a {
+.discovery-card a,
+.section-access a {
   color: #338a9d;
   text-decoration: none;
   font-weight: bold;
+}
+.discovery-card a:hover,
+.section-access a:hover {
+  text-decoration: underline;
 }
 
 .discovery-text li img,
@@ -127,15 +149,23 @@
   padding: 15px;
   flex: 1;
 }
+
+.discovery-card-box.medium-card .discovery-card{
+  padding: 10px 35px;
+}
+
 .discovery-card-wrapper {
   height: 100%;
   background: #e4eef1;
   border-radius: 4px;
   text-align: center;
   padding: 20px 10px 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 20px -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.discovery-card 
 
 .discovery-card-wrapper img {
   max-height: 100px;
@@ -146,12 +176,31 @@
   width: 90%;
   margin-top: 1rem;
   background: #007b7f;
+  border-color: #007b7f;
+  border-style: 1px;
   color: white;
   padding: 0.6rem 1.2rem;
   border-radius: 20px;
   text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .discovery-card .btn-go:hover {
-  background: #005e61;
+  background: white;
+  color: #007b7f;
+  border-color: #007b7f;
+  text-decoration: none;
+}
+
+.discovery-card h3 {
+  padding: 15px 0px;
+}
+
+.discovery-card p {
+  padding-bottom: 35px;
+}
+
+.page-explanation {
+  padding-top: 40px;
+  font-size: 17px;
 }
