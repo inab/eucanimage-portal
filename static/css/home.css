@@ -1,30 +1,55 @@
 .home-hero {
-  position: relative;
-  background: white;
-  overflow: hidden;
+  min-height: 400px;
+  background-color: #F2F2F2;
 }
 
-.hero-content-container {
+.home-content-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
   flex-wrap: wrap;
+  box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
 }
 
-.hero-image {
-  background-image: url('/images/home_image_1.png');
+.home-clipped-border {
+  position: relative;
+  width: 60%;
+  height: 400px;
+  background: linear-gradient(to bottom right, #348A9A, #48998B);
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  overflow: hidden;
+}
+
+.home-clipped-border::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  right: 20px;
+  bottom: 5px;
+  margin-right: 10px;
+  background-color: white;
+  background-image: url('/images/home.jpg');
   background-size: cover;
   background-position: center;
-  width: 50%;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.home-pages-image {
+  background-image: url('/images/home.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 92%;
   height: 400px;
   clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
 }
 
 .hero-text {
-  width: 45%;
+  width: 40%;
   color: #003c5f;
+  padding: 10px 25px;
 }
 
 .hero-button {
