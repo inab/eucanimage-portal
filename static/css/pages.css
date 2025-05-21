@@ -1,0 +1,206 @@
+.explore-header {
+  min-height: 400px;
+  background-color: #F2F2F2;
+}
+
+main {
+  padding-bottom: 120px;
+}
+
+.hero-pages-content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
+}
+
+.hero-image-border {
+  width: calc(50%);
+  height: 400px;
+  background: linear-gradient(to bottom right, #348A9A, #48998B);
+  display: inline-block;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.hero-clipped-border {
+  position: relative;
+  width: 60%;
+  height: 400px;
+  background: linear-gradient(to bottom right, #348A9A, #48998B);
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  overflow: hidden;
+}
+
+.hero-clipped-border::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  right: 20px;
+  bottom: 5px;
+  margin-right: 10px;
+  background-color: white;
+  background-image: url('/images/pages.jpg');
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.hero-pages-image {
+  background-image: url('/images/pages.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 92%;
+  height: 400px;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.hero-pages-text {
+  width: 40%;
+  color: #003c5f;
+  padding: 10px 25px;
+}
+
+.hero-pages-text h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.hero-pages-text .subtitle {
+  font-size: 20px;
+}
+
+.section-discovery {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.section-repositories {
+  padding-bottom: 50px;
+}
+
+.section-discovery-wrapper {
+  display: flex;
+  gap: 2rem;
+  padding: 15px 20px;
+  border: 1px solid #F2F2F2;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;  
+}
+
+.repositories-wrapper {
+  display: block;
+}
+.section-discovery-wrapper h2 {
+  color: #123a60;
+  font-weight: bold;
+}
+
+.discovery-card-box {
+  display: flex;
+  gap: 2rem;
+  padding: 15px 20px 20px;
+  border-radius: 5px;
+}
+
+.discovery-card-box.medium-card {
+  gap: 5rem;
+  padding: 5px 70px 20px;
+}
+
+.discovery-text {
+  flex: 2;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.discovery-text li,
+.discovery-card li {
+  list-style:none;
+}
+
+.discovery-card li {
+  text-align: left;
+}
+
+.discovery-card a,
+.section-access a {
+  color: #338a9d;
+  text-decoration: none;
+  font-weight: bold;
+}
+.discovery-card a:hover,
+.section-access a:hover {
+  text-decoration: underline;
+}
+
+.discovery-text li img,
+.discovery-card li img {
+  height: 20px;
+  padding-right: 10px;
+}
+
+.discovery-card {
+  padding: 15px;
+  flex: 1;
+}
+
+.discovery-card-box.medium-card .discovery-card{
+  padding: 10px 35px;
+}
+
+.discovery-card-wrapper {
+  height: 100%;
+  background: #e4eef1;
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px 10px 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 20px -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discovery-card-wrapper img {
+  max-height: 100px;
+}
+
+.discovery-card .btn-go {
+  display: inline-block;
+  width: 90%;
+  margin-top: 1rem;
+  background: #007b7f;
+  border-color: #007b7f;
+  border-style: 1px;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.discovery-card .btn-go:hover {
+  background: white;
+  color: #007b7f;
+  border-color: #007b7f;
+  text-decoration: none;
+}
+
+.discovery-card h3 {
+  padding: 15px 0px;
+}
+
+.discovery-card p {
+  padding-bottom: 35px;
+}
+
+.page-explanation {
+  padding-top: 40px;
+  font-size: 17px;
+}

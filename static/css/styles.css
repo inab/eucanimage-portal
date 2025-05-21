@@ -51,14 +51,6 @@
   height: 45px;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .nav-links {
   display: flex;
   flex-grow: 1 !important;
@@ -188,4 +180,14 @@
 
 .navbar-links a:hover::after {
   width: 100%;
+}
+
+.custom-link {
+  color: #009de0;
+  text-decoration: none;
+  background-color: transparent;
+}
+.custom-link:hover {
+  color: #006794;
+  text-decoration: underline;
 }

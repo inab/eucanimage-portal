@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ .Title }}</title>
+  <meta name="description" content="{{ .Params.description }}">
+  <link rel="shortcut icon" href="{{ .Site.Params.favicon | relURL }}">
+  {{ partial "head-additions.html" . }}
+  {{ partial "site-header.html" . }}
+</head>
+<body class="{{ .Type }}">
+
+  <main class="w-100">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "site-footer.html" . }}
+
+</body>
+</html>
