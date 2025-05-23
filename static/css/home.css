@@ -79,22 +79,43 @@
 .overview {
   display: flex;
   color: #003c5f;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .overview .overview-left .overview-title {
   font-weight: 700;
+  font-size: 25px;
+}
+
+.overview-right {
+  max-height: 410px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20px 10px;
 }
 
 .overview-right img {
-  max-height: 350px;
+  max-height: 400px;
 }
 
 .home-subheader {
   background-color: white;
-  padding-top: 50px;
+  padding-top: 30px;
   color: #003c5f;
   line-height: 30px;
+}
+
+.home-subheader.extra-padding {
+  padding-top: 50px;
+}
+
+.home-subheader .section-block {
+  padding-bottom: 40px;
+}
+
+.home-subheader .section-block span {
+  font-weight: bold;
 }
 
 .home-subheader .home-link {
@@ -105,4 +126,56 @@
 
 .home-subheader .cta-buttons {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-button-block {
+ max-width: 400px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.cta-button-block .cta-button-block-section {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+}
+.cta-button-block-links .btn {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.cta-button-block-links img {
+  height: 15px;
+}
+
+.cta-button-block-links .btn-explore {
+  color: #736283;
+}
+
+.cta-button-block-links .btn-explore:hover {
+  color: #736283;
+  text-decoration: underline;
+}
+
+.cta-button-block-links .btn-ai {
+  color: #849A58;
+}
+
+.cta-button-block-links .btn-ai:hover {
+  color: #849A58;
+  text-decoration: underline;
+}
+
+.home-subheader.features {
+  padding-top: 70px;
+}
+
+.home-subheader.features h2{
+  color: #338A9D;
 }
