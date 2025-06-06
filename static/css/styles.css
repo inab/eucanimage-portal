@@ -10,9 +10,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   height: 150px;
   padding: 1.5rem 2rem;
-  transition:
-    height .6s ease,
-    padding .6s ease;
+  transition: height 0.6s ease, padding 0.6s ease;
   display: flex;
   align-items: center;
 }
@@ -26,7 +24,6 @@
   transition: none !important;
   height: 90px;
 }
-  
 
 .logo {
   font-weight: bold;
@@ -44,7 +41,7 @@
 
 .navbar.not-home img {
   height: 45px;
-} 
+}
 
 .navbar.not-home .logo {
   height: 45px;
@@ -89,9 +86,10 @@
   background-color: #338a9d;
 }
 
-.social-links {
+.social-links,.social-icon {
   max-width: 40px;
 }
+
 .footer-centered {
   padding: 3rem 1rem;
   text-align: center;
