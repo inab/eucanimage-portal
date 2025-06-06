@@ -6,13 +6,9 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/data/</loc>
-  </url><url>
     <loc>http://localhost:1313/explore/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
-  </url><url>
-    <loc>http://localhost:1313/support/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url>
