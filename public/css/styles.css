@@ -17,11 +17,10 @@
   align-items: center;
 }
 
-.navbar.shrink {
+.navbar.not-home.shrink {
   height: 90px;
   padding: 0.5rem 2rem;
 }
-
 
 .navbar.preload {
   transition: none !important;
