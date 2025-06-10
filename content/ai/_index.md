@@ -1,9 +1,11 @@
 ---
 title: "AI Assessment"
 description: "Browse cancer datasets available through the platform."
-descriptionExtra: "EuCanImage provides a range of services to facilitate data discovery and access for the scientific and clinical community. In the following subsections, users can explore platform features specifically designed to support the retrieval of imaging and health data, and to understand the conditions under which such data can be accessed and used."
+descriptionExtra: "The AI assessment framework in the EuCanImage project includes the Radiomics Quality Score 2.0 (RQS 2.0), which standardizes the evaluation of both deep learning and handcrafted radiomics studies. It incorporates the Radiomics Readiness Levels (RRLs) to provide a structured, stepwise approach to assessing research maturity. The In Silico Trial Platform supports simulated clinical studies to evaluate AI's impact in three settings: clinicians without AI, with AI, and with AI plus explainability. OpenEBench enables researchers to participate in benchmarking events and access public benchmarking results, promoting transparency and comparability of AI methods. Additionally, the project integrates cost-effectiveness analysis to assess the practical and economic value of implementing AI in clinical workflows."
 ---
 
 {{< ai/page-intro >}}
 
 {{< ai/ai-modeling >}}
+
+{{< ai/ai-cards >}}
