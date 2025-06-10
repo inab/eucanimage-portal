@@ -9,3 +9,7 @@ descriptionExtra: "The AI assessment framework in the EuCanImage project include
 {{< ai/ai-modeling >}}
 
 {{< ai/ai-cards >}}
+
+{{< ai/ai-benchmarking >}}
+
+{{< ai/ai-other_sections >}}
