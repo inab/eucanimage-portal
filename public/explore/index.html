@@ -227,25 +227,39 @@
       </p>
       <p>
         This is a summary table of the clinical and epidemiological variables
-        collected
+        collected.
       </p>
       <table class="simple-table">
         <thead>
           <tr>
             <th>Variable</th>
             <th>Description</th>
+            <th>Type</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Age</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+            <td>Sex</td>
+            <td>Biological sex of the patient (male/female).</td>
+            <td>Clinical</td>
           </tr>
           <tr>
-            <td>Tumor Stage</td>
+            <td>Age at diagnosis</td>
+            <td>Patient's age when the cancer was diagnosed.</td>
+            <td>Epidemiological</td>
+          </tr>
+          <tr>
+            <td>Radiotherapy</td>
             <td>
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Whether the patient received radiation therapy as part of
+              treatment.
             </td>
+            <td>Clinical</td>
+          </tr>
+          <tr>
+            <td>Surgery</td>
+            <td>Whether surgical treatment was performed.</td>
+            <td>Clinical</td>
           </tr>
         </tbody>
       </table>
@@ -255,31 +269,37 @@
         Codebooks are made public as part of the research publications derived
         from EuCanImage use-cases:
       </p>
-      <div class="codebooks-card-grid">
-        <div class="discovery-card flip-in">
-          <div class="discovery-card-wrapper">
-            <h3>Hepatocellular carcinoma</h3>
-            <p>
-              <strong>See publication:</strong><br />
-              <a href="https://example.com/hcc-publication" target="_blank"
-                >HCC related EuCanImage study</a
-              >
-            </p>
-          </div>
-        </div>
+      <div class="container my-4">
+        <div class="row justify-content-center cards-row">
+          <div
+  class="section-discovery-wrapper single-card-centered codebooks-card"
+  style="max-width: 400px; max-height:150px"
+>
+  <div class="discovery-card flip-in">
+    <div class="discovery-card-wrapper">
+      <div class="codebooks">
+        <h4>Hepatocellular carcinoma</h4>
+        <p><strong>See publication:</strong><br />Publication in progress</p>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+          <div
+  class="section-discovery-wrapper single-card-centered codebooks-card"
+  style="max-width: 400px; max-height:150px"
+>
+  <div class="discovery-card flip-in">
+    <div class="discovery-card-wrapper">
+      <div class="codebooks">
+        <h4>Liver metastases in colorectal cancer</h4>
+        <p><strong>See publication:</strong><br />Publication in progress</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <div class="discovery-card flip-in">
-          <div class="discovery-card-wrapper">
-            <h3>Liver metastases in colorectal cancer</h3>
-            <p>
-              <strong>See publication:</strong><br />
-              <a
-                href="https://example.com/liver-mets-publication"
-                target="_blank"
-                >Liver mets study from EuCanImage</a
-              >
-            </p>
-          </div>
+
         </div>
       </div>
     </div>
