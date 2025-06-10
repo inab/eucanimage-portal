@@ -83,13 +83,11 @@ main {
 }
 
 .section-discovery-wrapper {
-  display: flex;
   gap: 2rem;
   padding: 15px 20px;
   border: 1px solid #F2F2F2;
   border-radius: 5px;
 }
-
 
 .section-discovery-wrapper.single-card-centered {
   justify-content: center;
@@ -100,10 +98,11 @@ main {
   max-width: 500px;
 }
 
-.section-discovery-wrapper.cards {
+.cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  margin-top: 24px;
+  gap: 2rem;
   justify-content: center;
 }
 
@@ -361,4 +360,33 @@ main {
 
 .discovery-card a:hover {
   text-decoration: underline;
+}
+
+.section-assessment-wrapper {
+  display: flex;
+  gap: 2rem;
+  padding: 15px 20px;
+  justify-content:center;
+}
+
+.metrics-table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.metrics-table th {
+  background-color: #007b7f;
+  color: white;
+  border: 1px solid #007b7f;
+  padding: 10px;
+  text-align: left;
+}
+
+.metrics-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
 }
