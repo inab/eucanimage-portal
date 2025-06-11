@@ -10,24 +10,20 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   height: 150px;
   padding: 1.5rem 2rem;
-  transition:
-    height .6s ease,
-    padding .6s ease;
+  transition: height 0.6s ease, padding 0.6s ease;
   display: flex;
   align-items: center;
 }
 
-.navbar.shrink {
+.navbar.not-home.shrink {
   height: 90px;
   padding: 0.5rem 2rem;
 }
-
 
 .navbar.preload {
   transition: none !important;
   height: 90px;
 }
-  
 
 .logo {
   font-weight: bold;
@@ -45,7 +41,7 @@
 
 .navbar.not-home img {
   height: 45px;
-} 
+}
 
 .navbar.not-home .logo {
   height: 45px;
@@ -58,7 +54,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
+  justify-content: flex-end;
   font-size: 1.1rem;
   color: #123a60;
   text-transform: uppercase;
@@ -90,9 +86,10 @@
   background-color: #338a9d;
 }
 
-.social-links {
+.social-links,.social-icon {
   max-width: 40px;
 }
+
 .footer-centered {
   padding: 3rem 1rem;
   text-align: center;

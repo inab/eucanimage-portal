@@ -18,9 +18,7 @@
 		<ul class="nav-links">
 			<li><a href="/" class="">Home</a></li>
 			<li><a href="/explore" class="active">Explore Data</a></li>
-			<li><a href="/ai" class="">AI in Cancer</a></li>
-			<li><a href="/data" class="">Data Submission</a></li>
-			<li><a href="/support" class="">Support</a></li>
+			<li><a href="/ai" class="">AI Assessment</a></li>
 		</ul>
 	</div>
 </nav>
@@ -52,80 +50,167 @@
   <a class="link-class" href="https://eucanimage.eu/">EuCanImage</a>  provides a range of services to facilitate data discovery and access for the scientific and clinical community. In the following subsections, users can explore platform features specifically designed to support the retrieval of imaging and health data, and to understand the conditions under which such data can be accessed and used.
 </div>
 
-<div class="section-discovery flex-container">
-  <div class="section-discovery-wrapper">
-    <div class="discovery-text">
-        <h2>Data Discovery</h2>
-        <p>
-          EuCanImage is compiling an open-access catalogue to search for relevant <strong>oncologic data collections for AI experiments</strong>.
-          It includes a complete search engine that enables data filtering by both, imaging and non-imaging parameters:
-        </p>
+<div class="section-discovery flex-container" id="repositories-section">
+  <div class="section-discovery-wrapper single-card-centered">
+    <div class="discovery-card flip-in">
+      <div class="discovery-card-wrapper" >
+        <img src="/images/logo_transparency.png" alt="Catalogue Icon" class="icon" />
+        <h3>Catalogue</h3>
+        <p><strong>Explore EuCanImage datasets</strong></p>
         <ul>
-          <li><img src="/images/right-arrow.png" />Imaging modality (CT, MRI, PET, US)</li>
-          <li><img src="/images/right-arrow.png" />Scanned Organ <em>(e.g. liver, breast or colorectal)</em></li>
-          <li><img src="/images/right-arrow.png" />Image acquisition parameters</li>
-          <li><img src="/images/right-arrow.png" />Data formats</li>
-          <li><img src="/images/right-arrow.png" />Image annotations and segmentations</li>
-          <li><img src="/images/right-arrow.png" />Quantified imaging biomarkers</li>
-          <li><img src="/images/right-arrow.png" />Clinical variables</li>
-          <li><img src="/images/right-arrow.png" />Physical measurements</li>
-          <li><img src="/images/right-arrow.png" />Pathology specimen data</li>
-          <li><img src="/images/right-arrow.png" />-omics</li>
+          <li><img src="/images/right-arrow.png" />Discover studies with cancer imaging, biological and health data.</li>
+          <li><img src="/images/right-arrow.png" />Locate associated imaging and non-imaging data collections.</li>
+          <li><img src="/images/right-arrow.png" />Hosted by the <a href="https://www.eibir.org/" target="_blank">European Institute for Biomedical Imaging Research</a>.</li>
         </ul>
+        <a href="https://molgenis.eibir-edc.org/#/?network=EUCANIMAGE" target="_blank" class="btn btn-go">GO</a>
       </div>
-
-      <div class="discovery-card flip-in">
-        <div class="discovery-card-wrapper">
-          <img src="/images/logo_transparency.png" alt="Catalogue Icon" class="icon" />
-          <h3>Catalogue</h3>
-          <p><strong>Explore EuCanImage datasets</strong></p>
-          <ul>
-            <li><img src="/images/right-arrow.png" />Discover studies with cancer imaging, biological and health data.</li>
-            <li><img src="/images/right-arrow.png" />Locate associated imaging and non-imaging data collections.</li>
-            <li><img src="/images/right-arrow.png" />Hosted by the <a href="https://www.eibir.org/" target="_blank">European Institute for Biomedical Imaging Research</a>.</li>
-          </ul>
-          <a href="/https://eucanimage.eu/research-results/" class="btn btn-go">GO</a>
-        </div>
-      </div>
+    </div>
   </div>
 </div>
 
-<div class="section-repositories flex-container" id="repositories-section">
+<div class="section-repositories flex-container" >
   <div class="section-discovery-wrapper repositories-wrapper">
-    <div class="discovery-text">
-      <h2>Data Repositories</h2>
+    <h2>Data Collecction Summary</h2>
+
+    <div class="repository-table-container">
       <p>
-        Well-established European data infraestructures are used for <strong>long-term archive</strong>
-        of the cancer imaging, -omincs and health data collection that are being curated, annotated and harmonized in the consortium.
+        <em
+          ><strong>Table 1:</strong> Preliminary list of annotated cancer
+          imaging datasets for the initial phase of EuCanImage platform
+          implementation and testing, totalling 5,641 cases.</em
+        >
       </p>
-    </div>
 
-    <div class="discovery-card-box medium-card">
-      <div class="discovery-card flip-in">
-        <div class="discovery-card-wrapper">
-          <img src="/images/eurobioimaging-logo.svg" alt="Catalogue Icon" class="icon" />
-          <h3>Euro-BioImaging Archive</h3>
-          <p><strong>Imaging repository for EuCanImage</strong></p>
-          <ul>
-            <li><img src="/images/right-arrow.png" />Large-scale multi-cancer, multi-centre and multi-modal image repository.</li>
-            <li><img src="/images/right-arrow.png" />Co-managed by <a href="https://www.erasmusmc.nl/en/" target="_blank">Erasmus Medical Center (EMC)</a>.</li>
-          </ul>
-          <a href="/https://www.erasmusmc.nl/en/" class="btn btn-go">GO</a>
-        </div>
-      </div>
+      <table class="repository-table">
+        <thead>
+          <tr>
+            <th>Anatomy</th>
+            <th>Disease</th>
+            <th>N of patients</th>
+            <th>Modality</th>
+            <th>Partner</th>
+            <th>Country</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Multiple</td>
+            <td>Various soft-tissue tumours (e.g. sarcoma)</td>
+            <td>239</td>
+            <td>MRI / CT</td>
+            <td>EMC</td>
+            <td>NL</td>
+            <td>Collection</td>
+          </tr>
+          <tr>
+            <td>Liver</td>
+            <td>Colorectal liver metastases</td>
+            <td>~500</td>
+            <td>CT</td>
+            <td>EMC</td>
+            <td>NL</td>
+            <td>Annotation</td>
+          </tr>
+          <tr>
+            <td>Breast</td>
+            <td>Breast cancer</td>
+            <td>197</td>
+            <td>MG</td>
+            <td>EMC</td>
+            <td>NL</td>
+            <td>Legal</td>
+          </tr>
+          <tr>
+            <td>Brain</td>
+            <td>Low-grade glioma</td>
+            <td>774</td>
+            <td>MRI</td>
+            <td>EMC</td>
+            <td>NL</td>
+            <td>Published<sup>1</sup></td>
+          </tr>
+          <tr>
+            <td>Extremities</td>
+            <td>Lipoma and liposarcoma</td>
+            <td>116</td>
+            <td>MRI</td>
+            <td>EMC</td>
+            <td>NL</td>
+            <td>Published<sup>2</sup></td>
+          </tr>
+          <tr>
+            <td>Extremities</td>
+            <td>Desmoid-type fibromatosis and similar extremity sarcoma</td>
+            <td>203</td>
+            <td>MRI</td>
+            <td>EMC</td>
+            <td>NL</td>
+            <td>Published<sup>2</sup></td>
+          </tr>
+          <tr>
+            <td>Gastrointestinal</td>
+            <td>
+              GISTs and intra-abdominal gastrointestinal tumours resembling
+              GISTs
+            </td>
+            <td>246</td>
+            <td>CT</td>
+            <td>EMC</td>
+            <td>NL</td>
+            <td>Published<sup>2</sup></td>
+          </tr>
+          <tr>
+            <td>Liver</td>
+            <td>Primary solid liver tumours (e.g. HCC)</td>
+            <td>186</td>
+            <td>MRI</td>
+            <td>EMC</td>
+            <td>NL</td>
+            <td>Published<sup>2</sup></td>
+          </tr>
+          <tr>
+            <td>Liver</td>
+            <td>Colorectal liver metastases</td>
+            <td>77</td>
+            <td>CT</td>
+            <td>EMC</td>
+            <td>NL</td>
+            <td>Published<sup>2</sup></td>
+          </tr>
+          <tr>
+            <td>Lung</td>
+            <td>Melanoma lung metastases</td>
+            <td>103</td>
+            <td>CT</td>
+            <td>EMC</td>
+            <td>NL</td>
+            <td>Published<sup>2</sup></td>
+          </tr>
+          <tr>
+            <td>Breast</td>
+            <td>Breast cancer</td>
+            <td>2964</td>
+            <td>MG</td>
+            <td>UB / Parc Taulí</td>
+            <td>ES</td>
+            <td>Annotation</td>
+          </tr>
+        </tbody>
+      </table>
 
-      <div class="discovery-card flip-in">
-        <div class="discovery-card-wrapper">
-          <img src="/images/ega.png" alt="Catalogue Icon" class="icon" />
-          <h3>European Genemo-Phenome Archive</h3>
-          <p><strong>Biological &amp; health data repository for EuCanImages</strong></p>
-          <ul>
-            <li><img src="/images/right-arrow.png" />Permanent archiving and sharing of personally identifiable genetic, phenotypic, and clinical data.</li>
-            <li><img src="/images/right-arrow.png" />Hosted at <a href="https://www.crg.eu/" target="_blank">Center for Genomic Regulation (CGR)</a>.</li>
-          </ul>
-          <a href="https://www.crg.eu/" class="btn btn-go">GO</a>
-        </div>
-      </div>
+      <ol class="references">
+        <li>
+          <a href="https://doi.org/10.1016/j.dib.2021.107191" target="_blank"
+            >https://doi.org/10.1016/j.dib.2021.107191</a
+          >
+        </li>
+        <li>
+          <a href="https://doi.org/10.1101/2021.08.19.21262238" target="_blank"
+            >https://doi.org/10.1101/2021.08.19.21262238</a
+          >
+        </li>
+      </ol>
     </div>
   </div>
 </div>
@@ -133,9 +218,80 @@
 <div class="section-access flex-container">
   <div class="section-discovery-wrapper repositories-wrapper">
     <div class="discovery-text">
+      <h2>Collected Variables</h2>
+      <p>
+        The full list of non-imaging variables included in the EuCanImage
+        collections are described in the catalogue, together with its
+        availability in each dataset and some aggregated statistics displaying
+        ranges, distributions, etc.
+      </p>
+      <p>
+        This is a summary table of the clinical and epidemiological variables
+        collected
+      </p>
+      <table class="simple-table">
+        <thead>
+          <tr>
+            <th>Variable</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Age</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+          </tr>
+          <tr>
+            <td>Tumor Stage</td>
+            <td>
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Codebooks</h3>
+      <p>
+        Codebooks are made public as part of the research publications derived
+        from EuCanImage use-cases:
+      </p>
+      <div class="codebooks-card-grid">
+        <div class="discovery-card flip-in">
+          <div class="discovery-card-wrapper">
+            <h3>Hepatocellular carcinoma</h3>
+            <p>
+              <strong>See publication:</strong><br />
+              <a href="https://example.com/hcc-publication" target="_blank"
+                >HCC related EuCanImage study</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="discovery-card flip-in">
+          <div class="discovery-card-wrapper">
+            <h3>Liver metastases in colorectal cancer</h3>
+            <p>
+              <strong>See publication:</strong><br />
+              <a
+                href="https://example.com/liver-mets-publication"
+                target="_blank"
+                >Liver mets study from EuCanImage</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-access flex-container" style="margin-top: 50px;">
+  <div class="section-discovery-wrapper repositories-wrapper">
+    <div class="discovery-text">
       <h2>Data Acces</h2>
       <p>
-        While the EuCanImage platform provides access to a comprehensive catalogue of imaging and related datasets, access requests for controlled data are not handled directly by the project. Instead, visitors are directed to the appropriate data repositories hosting the datasets of interest. For more information, please refer to the <a href="#repositories-section"> Data Repository </a> section
+        While the EuCanImage platform provides access to a comprehensive catalogue of imaging and related datasets, access requests for controlled data are not handled directly by the project. Instead, visitors are directed to the appropriate data repositories hosting the datasets of interest. For more information, please refer to the <a href="#repositories-section"> Data Catalogue </a> section.
       </p>
     </div>
   </div>
