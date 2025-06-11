@@ -334,33 +334,63 @@ main {
   font-weight: bold;
 }
 
-.codebooks-card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
 
 .discovery-card {
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  padding: 20px;
-  transition: transform 0.3s ease;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.discovery-card h3 {
-  margin-top: 0;
+
+.cards-row {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+  align-items: stretch;
 }
 
-.discovery-card a {
-  color: #007b7f;
-  text-decoration: none;
+.codebooks-card .discovery-card {
+  padding: 8px 8px;
+  min-height: auto;
 }
 
-.discovery-card a:hover {
-  text-decoration: underline;
+.codebooks-card .discovery-card-wrapper {
+  padding: 15px 10px 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px -5px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  text-align: center;
 }
+
+
+.codebooks-card .codebooks {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 0.3rem;
+}
+
+.codebooks-card .codebooks h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.codebooks-card .codebooks p {
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.3;
+  color: #444;
+}
+
 
 .section-assessment-wrapper {
   display: flex;
@@ -390,3 +420,4 @@ main {
   padding: 8px;
   text-align: left;
 }
+
