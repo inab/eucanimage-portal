@@ -74,8 +74,8 @@ main {
 }
 
 .section-discovery {
-  padding-top: 70px;
-  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 70px;
 }
 
 .section-repositories {
@@ -87,6 +87,10 @@ main {
   padding: 15px 20px;
   border: 1px solid #F2F2F2;
   border-radius: 5px;
+}
+
+#repositories-section {
+  display:flex;
 }
 
 .section-discovery-wrapper.single-card-centered {
@@ -358,16 +362,15 @@ main {
 }
 
 .codebooks-card .discovery-card-wrapper {
-  padding: 15px 10px 15px;
+  padding: 30px 10px 0px;;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px -5px;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
   height: 100%;
-  text-align: center;
 }
+
 
 .codebooks-card .codebooks {
   text-align: left;
