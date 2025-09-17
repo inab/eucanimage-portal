@@ -19,6 +19,7 @@
 			<li><a href="/" class="">Home</a></li>
 			<li><a href="/explore" class="">Explore Data</a></li>
 			<li><a href="/ai" class="active">AI Assessment</a></li>
+			<li><a href="/software" class="">Software</a></li>
 		</ul>
 	</div>
 </nav>
@@ -50,18 +51,64 @@
   The AI assessment framework in the EuCanImage project includes the Radiomics Quality Score 2.0 (RQS 2.0), which standardizes the evaluation of both deep learning and handcrafted radiomics studies. It incorporates the Radiomics Readiness Levels (RRLs) to provide a structured, stepwise approach to assessing research maturity. The In Silico Trial Platform supports simulated clinical studies to evaluate AI&#39;s impact in three settings: clinicians without AI, with AI, and with AI plus explainability. OpenEBench enables researchers to participate in benchmarking events and access public benchmarking results, promoting transparency and comparability of AI methods. Additionally, the project integrates cost-effectiveness analysis to assess the practical and economic value of implementing AI in clinical workflows.
 </div>
 
-<div>
-  AI modeling
+<div class="section-repositories flex-container">
+
+  <div class="section-discovery-wrapper mt-5">
+    <h2>AI Modeling</h2>
+    <div class="cards row">
+      <div class="col-6">
+        <p>
+          EnCanImage is creating a <b>collection of radiomics methods and AI algorithms</b> for building novel integrative AI models from large-scale imaging and non-imaging data. They are <b>offered through the AI Virtual Research Environment</b>, a portable computational environment for supporting the development and validation of AI tools.
+        </p>
+        <ul>
+          <li>
+            Tools for cancer image feature  extraction and selection
+          </li>
+          <li>
+            Machine-learning pipeline for integrated predictive modelling
+          </li>
+        </ul>
+      </div>
+      <div class="col-6">
+        <div class="discovery-card flip-in">
+          <div class="discovery-card-wrapper">
+            <div class="card-header">
+              <img src="/images/eucanimage_ai-vre.png" alt="OpenEBench logo" class="icon pb-3">
+              <h4 class="pt-2">AI Development Platform</h4>
+              <p class="pb-0"><strong>Run AI experiments</strong></p>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li><img src="/images/right-arrow.png" />Run EuCanImage AI tools on a private execution environment.</li>
+                <li><img src="/images/right-arrow.png" />Use the user-friendly web interface to upload your dataset or import them from any of the EuCanImage Data Repositories.</li>
+                <li><img src="/images/right-arrow.png" />A pilot installation is online hosted at the <a href="https://bsc.es/">Barcelona Supercomputing Center</a> facilities.</li>
+              </ul>
+            </div>
+            
+            
+             <div class="row w-100">
+              <div class="col-6">
+                <a href="https://vre.eucanimage.eu/" target="_blank" class="btn btn-go">Run Online Demo</a>
+              </div>
+              <div class="col-6">
+                <a href="/software" class="btn btn-go">Install Platform</a>
+              </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="section-repositories flex-container">
 
   <div class="section-discovery-wrapper mt-5">
   <h2>Access to Services or Software</h2>
 
-    <div class="cards">
+    <div class="cards row">
 
       
-      <div class="discovery-card flip-in">
+      <div class="discovery-card flip-in col-4">
         <div class="discovery-card-wrapper">
           <div class="card-header">
             <img src="/images/opeb_logo.gif" alt="OpenEBench logo" class="icon pb-3">
@@ -81,10 +128,10 @@
       </div>
 
       
-      <div class="discovery-card flip-in">
+      <div class="discovery-card flip-in col-4">
         <div class="discovery-card-wrapper">
           <div class="card-header">
-            <img src="/images/logo_provisional.jpg" alt="OpenEBench logo" class="icon pb-3">
+            <img src="/images/InSilicoTrials.png" alt="OpenEBench logo" class="icon pb-3">
             <h4>In silico Trial Platform</h4>
             <p class="pb-0"><strong>In silico Validation</strong></p>
           </div>
@@ -103,10 +150,10 @@
       </div>
 
       
-      <div class="discovery-card flip-in">
+      <div class="discovery-card flip-in col-4">
         <div class="discovery-card-wrapper">
           <div class="card-header">
-            <img src="/images/logo_provisional.jpg" alt="OpenEBench logo" class="icon pb-3">
+            <img src="/images/rq.png" alt="OpenEBench logo" class="icon pb-3">
             <h4>Radiomics Quality Score 2.0 </h4>
             <p class="pb-0"><strong>Benchmarking Radiomics Studies</strong></p>
           </div>
@@ -119,6 +166,43 @@
 
           
           <a href="https://www.radiomics.world/rqs2" target="_blank" class="btn btn-go">GO</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards row">
+      <div class="discovery-card flip-in col-4">
+        <div class="discovery-card-wrapper">
+          <div class="card-header">
+            <img src="/images/CollectiveMindslogo.png" alt="Collective Minds" class="icon pb-3">
+            <h4 class="pt-2">Collective Minds Research</h4>
+            <p class="pb-0"><strong>Collective Segmentation for Medical Imaging</strong></p>
+          </div>
+          <div class="card-body">
+           <p class="mt-0 pb-0">
+            An advanced, collaborative platform for precise medical image segmentation and other clinical research workflows, designed to accelerate AI-driven oncology research. Built on a secure, cloud infrastructure, it enables the collection, annotation, and benchmarking of cancer-related imaging multi-modal datasets, ensuring high-quality, GDPR-compliant workflows.
+           </p>
+          </div>
+          
+          
+          <a href="https://collectiveminds.health/research" target="_blank" class="btn btn-go">GO</a>
+        </div>
+      </div>
+      <div class="discovery-card flip-in col-4">
+        <div class="discovery-card-wrapper">
+          <div class="card-header">
+            <img src="/images/CollectiveMindslogo.png" alt="Collective Minds" class="icon pb-3">
+            <h4 class="pt-2">Collective Minds Connect</h4>
+            <p class="pb-0"><strong>Automatic Imaging Data Collection, Pseudonymization, Tracking and Transfer</strong></p>
+          </div>
+          <div class="card-body">
+           <p class="mt-0 pb-0">
+            A seamless hospital edge gateway and data pipeline for automated imaging acquisition, anonymization, tracking and secure transfer. This service streamlines the entire lifecycle—from data ingestion through tracking to delivery—ensuring compliant, efficient, and traceable data transfers that facilitate federated AI development and multi-modal, multi-centric collaboration. 
+           </p>
+          </div>
+          
+          
+          <a href="https://collectiveminds.health/connect" target="_blank" class="btn btn-go">GO</a>
         </div>
       </div>
     </div>
@@ -364,7 +448,7 @@
     <h2>Other sections or suggestions?</h2>
 
     <p>
-      Please, let me know if you think we can include any other kind of information it would be valuable to share at the portal for AI data researchers willing to understand/use our AI assessment efforts
+      Please, let us know if you think we can include any other kind of information it would be valuable to share at the portal for AI data researchers willing to understand/use our AI assessment efforts
       ...
     </p>
   </div>

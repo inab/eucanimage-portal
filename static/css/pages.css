@@ -89,10 +89,6 @@ main {
   border-radius: 5px;
 }
 
-#repositories-section {
-  display:flex;
-}
-
 .section-discovery-wrapper.single-card-centered {
   justify-content: center;
   border: 1px white;
@@ -106,7 +102,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   margin-top: 24px;
-  gap: 2rem;
   justify-content: center;
 }
 
@@ -166,7 +161,6 @@ main {
 
 .discovery-card {
   padding: 15px;
-  flex: 1;
 }
 
 .discovery-card-box.medium-card .discovery-card{
@@ -340,10 +334,8 @@ main {
 
 
 .discovery-card {
-  background-color: #f9f9f9;
   border-radius: 8px;
   padding: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -423,3 +415,10 @@ main {
   text-align: left;
 }
 
+.custom-image-box {
+  padding: 15px;
+}
+
+.custom-image-box img {
+  width: 100%;
+}
