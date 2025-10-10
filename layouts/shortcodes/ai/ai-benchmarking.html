@@ -6,80 +6,133 @@
     <h5 class="text-secondary mt-3">Metrics and scores</h5>
 
     <div class="section-assessment-wrapper">
-      <!-- Detection Metrics -->
-      <table class="metrics-table">
-        <thead>
-          <tr>
-            <th>Detection Metrics</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Intersection Over Union (IoU)</td>
-          </tr>
-          <tr>
-            <td>Boundary Intersection Over Union (Uncertainity Aware)</td>
-          </tr>
-          <tr>
-            <td>False Positives Per Image</td>
-          </tr>
-          <tr>
-            <td>FROC Curve (AUC-FROC)</td>
-          </tr>
-          <tr>
-            <td>Average Precision at various thresholds (alpha= 0.1 to 0.75)</td>
-          </tr>
-          <tr>
-            <td>Sensitivity at various thresholds (alpha = 0.1 to 0.75)</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="section-assessment-wrapper">
       <!-- Classification Metrics -->
       <table class="metrics-table">
         <thead>
-          <tr>
+          <tr style="height: 40px;">
             <th>Classification Metrics</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>TPR/Sensitivity/Recall</td>
+            <td>
+              <div class="w-100">
+                True Positive Rate (TPR) / Sensitivity / Recall
+              </div>
+              <div class="table-subtext">
+                Measures the proportion of actual positives correctly identified (also called recall or true positive rate).
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>TNR/Specificity</td>
+            <td>
+              <div class="w-100">
+                True Negative Rate (TNR) / Specificity
+              </div>
+              <div class="table-subtext">
+                Measures the proportion of actual negatives correctly identified (true negative rate).
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>PPV/Precision</td>
+            <td>
+              <div class="w-100">
+                Positive Predictive Value (PPV) / Precision
+              </div>
+              <div class="table-subtext">
+                Proportion of predicted positives that are true positives.
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>NPV</td>
+            <td>
+              <div class="w-100">
+                Negative Predictive Value (NPV)
+              </div>
+              <div class="table-subtext">
+                Proportion of predicted negatives that are true negatives.
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>Accuracy</td>
+            <td>
+              <div class="w-100">
+                F1 Score
+              </div>
+              <div class="table-subtext">
+                Harmonic mean of precision and recall, balancing both in a single metric.
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>F1 Score</td>
+            <td>
+              <div class="w-100">
+                Accuracy
+              </div>
+              <div class="table-subtext">
+                Overall proportion of correctly classified instances (both positives and negatives).
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>Balanced Accuracy</td>
+            <td>
+              <div class="w-100">
+                Balanced Accuracy
+              </div>
+              <div class="table-subtext">
+                Average of sensitivity and specificity, useful for imbalanced datasets.
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>Cohen's Kappa</td>
+            <td>
+              <div class="w-100">
+                Cohen's Kappa
+              </div>
+              <div class="table-subtext">
+                Measures agreement between predicted and true labels adjusted for chance.
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>Weighted Cohen's Kappa</td>
+            <td>
+              <div class="w-100">
+                Weighted Cohen's Kappa
+              </div>
+              <div class="table-subtext">
+                Cohen's Kappa that accounts for severity of misclassification via weights.
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>Mathews Correlation Coefficient</td>
+            <td>
+              <div class="w-100">
+                Mathews Correlation Coefficient
+              </div>
+              <div class="table-subtext">
+                Correlation coefficient between observed and predicted classifications, suitable for imbalanced data.
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>AUC Receiver Operating Characteristic Curve</td>
+            <td>
+              <div class="w-100">
+                Receiver Operating Characteristic Curve AUC
+              </div>
+              <div class="table-subtext">
+                Area under the ROC curve; measures the trade-off between TPR and FPR.
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>AUC Precision Recall Curve</td>
+            <td>
+              <div class="w-100">
+                Precision Recall Curve AUC
+              </div>
+              <div class="table-subtext">
+                Area under the Precision-Recall curve; emphasizes performance on the positive class.
+              </div>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -87,147 +140,83 @@
       <!-- Segmentation Metrics -->
       <table class="metrics-table">
         <thead>
-          <tr>
+          <tr style="height: 40px;">
             <th>Segmentation Metrics</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Dice Index</td>
+            <td>
+              <div class="w-100">
+                Dice Index
+              </div>
+              <div class="table-subtext">
+                Overlap between prediction and ground truth.
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>Surface Dice Index</td>
+            <td>
+              <div class="w-100">
+                Jaccard Index
+              </div>
+              <div class="table-subtext">
+                Intersection over Union of prediction and ground truth.
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>Jaccard Index</td>
+            <td>
+              <div class="w-100">
+                Surface Dice Index
+              </div>
+              <div class="table-subtext">
+                Overlap of surfaces within a fixed tolerance.
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>Hausdorff Distance</td>
+            <td>
+              <div class="w-100">
+                Hausdorff Distance
+              </div>
+              <div class="table-subtext">
+                Maximum surface distance between masks.
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>Hausdorff Distance 95 percentile</td>
+            <td>
+              <div class="w-100">
+                Hausdorff Distance 95 percentile
+              </div>
+              <div class="table-subtext">
+                95th percentile of surface distances.
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>Average Symmetric Surface Distance</td>
+            <td>
+              <div class="w-100">
+                Average Symmetric Surface Distance
+              </div>
+              <div class="table-subtext">
+                Mean of all shortest distances between surfaces of A and B, bidirectionally.
+              </div>
+            </td>
           </tr>
           <tr>
-            <td>Normalized Surface Distance</td>
+            <td>
+              <div class="w-100">
+                Modified Hausdorff Distance
+              </div>
+              <div class="table-subtext">
+                Average of mean nearest distances between surfaces.
+              </div>
+            </td>
           </tr>
-          <tr>
-            <td>Modified Hausdorff Distance</td>
-          </tr>
-          <tr>
-            <td>Average Distance (2D)</td>
-          </tr>
-    
         </tbody>
       </table>
-    </div>
-
-    <!-- Section - Datasets -->
-    <h5 class="text-secondary mt-3">Datasets</h5>
-    <p>(Controlled) access to datasets we expect to produce. Right now these resources are not yet created, but if we can compile the list of expected assets, I’ll create a table outlining them:
-    </p>
-
-    <div class="section-assessment-wrapper">
-      <table class="simple-table">
-        <tr>
-          <th colspan="2">Dataset Name</th>
-          <th rowspan="2">Type</th>
-          <th rowspan="2">Private XNAT/EGA link</th>
-        </tr>
-        <tr>
-        </tr>
-        <tr>
-          <td rowspan="2">UC1</td>
-          <td>Image testing Dataset</td>
-          <td></td>
-          <td>Not available yet</td>
-        </tr>
-        <tr>
-          <td>Ground Truth</td>
-          <td></td>
-          <td>Not available yet</td>
-        </tr>
-        <tr>
-          <td rowspan="2">UC2</td>
-          <td>Image testing Dataset</td>
-          <td></td>
-          <td>Not available yet</td>
-        </tr>
-        <tr>
-          <td>Ground Truth</td>
-          <td></td>
-          <td>Not available yet</td>
-        </tr>
-        <tr>
-          <td rowspan="2">UC3</td>
-          <td>Image testing Dataset</td>
-          <td></td>
-          <td>Not available yet</td>
-        </tr>
-        <tr>
-          <td>Ground Truth</td>
-          <td></td>
-          <td>Not available yet</td>
-        </tr>
-        <tr>
-          <td rowspan="2">UC4</td>
-          <td>Image testing Dataset</td>
-          <td></td>
-          <td>Not available yet</td>
-        </tr>
-        <tr>
-          <td>Ground Truth</td>
-          <td></td>
-          <td>Not available yet</td>
-        </tr>
-        <tr>
-          <td rowspan="2">UC5</td>
-          <td>Image testing Dataset</td>
-          <td></td>
-          <td>Not available yet</td>
-        </tr>
-        <tr>
-          <td>Ground Truth</td>
-          <td></td>
-          <td>Not available yet</td>
-        </tr>
-        <tr>
-          <td rowspan="2">UC6</td>
-          <td>Image testing Dataset</td>
-          <td></td>
-          <td>Not available yet</td>
-        </tr>
-        <tr>
-          <td>Ground Truth</td>
-          <td></td>
-          <td>Not available yet</td>
-        </tr>
-        <tr>
-          <td rowspan="2">UC7</td>
-          <td>Image testing Dataset</td>
-          <td></td>
-          <td>Not available yet</td>
-        </tr>
-        <tr>
-          <td>Ground Truth</td>
-          <td></td>
-          <td>Not available yet</td>
-        </tr>
-        <tr>
-          <td rowspan="2">UC8</td>
-          <td>Image testing Dataset</td>
-          <td></td>
-          <td>Not available yet</td>
-        </tr>
-        <tr>
-          <td>Ground Truth</td>
-          <td></td>
-          <td>Not available yet</td>
-        </tr>
-      </table>
-      
     </div>
   </div>
 </div>
