@@ -1,0 +1,60 @@
+<div class="section-repositories flex-container">
+    <div class="section-discovery-wrapper repositories-wrapper">
+        <h2>EuCanImage Imaging Catalogue</h2>
+
+        <div class="repository-table-container">
+            <p>
+                <a href="https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/network/EUCANIMAGE"
+                    target="_blank" class="link-catalogue"><strong>See overview</strong></a>
+            </p>
+
+            {{ range $biobank := .Site.Data.catalogue }}
+            <table class="simple-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Body Parts</th>
+                        <th>Image modalities</th>
+                        <th>Size</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Biobank row -->
+                    <tr class="bg-light">
+                        <td colspan="5">
+                            <strong class="fs-5">{{ $biobank.name }}</strong>
+                            <br>
+                            {{ $biobank.description }}
+                            <br>
+                            <em>Collections: {{ len $biobank.collections }} | Total Subjects:
+                                {{ $total := 0 }}
+                                {{ range $biobank.collections }}
+                                {{ $subjects := int .subjects }}
+                                {{ $total = add $total $subjects }}
+                                {{ end }}
+                                {{ $total }}
+                            </em>
+                            <br>
+                            <a href="{{ $biobank.url }}" target="_blank" class="link-catalogue">View Biobank</a>
+                        </td>
+                    </tr>
+
+                    <!-- Collections rows -->
+                    {{ range $biobank.collections }}
+                    <tr>
+                        <td>{{ .name }}</td>
+                        <td>{{ delimit .body_parts ", " }}</td>
+                        <td>{{ delimit .imaging_modalities ", " }}</td>
+                        <td>{{ .subjects }} subjects</td>
+                        <td class="text-center">
+                            <a href="{{ .url }}" target="_blank" class="link-catalogue">View collection</a>
+                        </td>
+                    </tr>
+                    {{ end }}
+                </tbody>
+            </table>
+            {{ end }}
+        </div>
+    </div>
+</div>

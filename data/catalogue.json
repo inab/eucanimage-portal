@@ -1,0 +1,487 @@
+[
+  {
+    "id": "aaaadaeyv7ps2aaaaaaaaaaaae",
+    "name": "EuCanImage Pilot",
+    "url": "https://molgenis.eibir-edc.org/#/biobank/aaaadaeyv7ps2aaaaaaaaaaaae",
+    "description": "Test for EuCanImage Pilot integration in the imaging catalogue. Liver cancer case with MRI and RTSTRUCT images and non-imaging data.",
+    "collections": [
+      {
+        "id": "aaaadaeywlljkaaaaaaaaaaaae",
+        "name": "EuCanImage Pilot",
+        "description": "Test for EuCanImage Pilot integration in the imaging catalogue. Liver cancer case with MRI and RTSTRUCT images and non-imaging data.",
+        "body_parts": [
+          "Liver"
+        ],
+        "imaging_modalities": [
+          "MRI",
+          "RTSTRUCT"
+        ],
+        "subjects": "20",
+        "url": "https://molgenis.eibir-edc.org/#/collection/aaaadaeywlljkaaaaaaaaaaaae"
+      }
+    ]
+  },
+  {
+    "id": "NL_EGD",
+    "name": "The Erasmus Glioma Database (EGD)",
+    "url": "https://molgenis.eibir-edc.org/#/biobank/NL_EGD",
+    "description": "The Erasmus Glioma Database (EGD) contains structural magnetic resonance imaging (MRI) scans, genetic and histological features (specifying the WHO 2016 subtype), and whole tumor segmentations of patients with glioma.",
+    "collections": [
+      {
+        "id": "NL_EGD_COL",
+        "name": "The Erasmus Glioma Database (EGD)",
+        "description": "The Erasmus Glioma Database (EGD) contains structural magnetic resonance imaging (MRI) scans, genetic and histological features (specifying the WHO 2016 subtype), and whole tumor segmentations of patients with glioma. Preoperative MRI data of 774 patients with glioma (281 female, 492 male, 1 unknown, age range 19–86 years) treated at the Erasmus MC between 2008 and 2018 is available. For all patients a pre-contrast T1-weighted, post-contrast T1-weighted, T2-weighted, and T2-weighted FLAIR scan are available.",
+        "body_parts": [
+          "Brain"
+        ],
+        "imaging_modalities": [
+          "MRI"
+        ],
+        "subjects": "774",
+        "url": "https://molgenis.eibir-edc.org/#/collection/NL_EGD_COL"
+      }
+    ]
+  },
+  {
+    "id": "aaaadfzushcdgaaaaaaaaaaaae",
+    "name": "Use Case 1 - Detection of small hepatocellular carcinoma lesions in cirrhotic liver MRI",
+    "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/biobank/aaaadfzushcdgaaaaaaaaaaaae",
+    "description": "Data from this Biobank can be used to investigate AI solutions to increase the diagnostic sensitivity of liver MRI (currently at 60%) for detecting small hepatocellular carcinoma lesions (less than 20mm) in cirrhotic liver, while keeping the specificity high.",
+    "collections": [
+      {
+        "id": "aaaadf2b5nc4aaaaaaaaaaaaae",
+        "name": "Use Case 1 - GUMED",
+        "description": "This dataset contains contrast-enhanced liver MRI scans acquired at the time of diagnosis from patients with cirrhosis or chronic hepatitis B and small (<2 cm) focal liver lesions.",
+        "body_parts": [
+          "Abdomen",
+          "Liver"
+        ],
+        "imaging_modalities": [
+          "MRI",
+          "RTSTRUCT"
+        ],
+        "subjects": "166",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2b5nc4aaaaaaaaaaaaae"
+      },
+      {
+        "id": "aaaadf2knowtyaaaaaaaaaaaae",
+        "name": "Use Case 1 - UNIPI",
+        "description": "This dataset contains contrast-enhanced liver MRI scans acquired at the time of diagnosis from patients with cirrhosis or chronic hepatitis B and small (<2 cm) focal liver lesions.",
+        "body_parts": [
+          "Abdomen",
+          "Liver"
+        ],
+        "imaging_modalities": [
+          "MRI"
+        ],
+        "subjects": "499",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2knowtyaaaaaaaaaaaae"
+      },
+      {
+        "id": "aaaadf2kpwv7gaaaaaaaaaaaae",
+        "name": "Use case 1 - FCRB",
+        "description": "This dataset contains contrast-enhanced liver MRI scans acquired at the time of diagnosis from patients with cirrhosis or chronic hepatitis B and small (<2 cm) focal liver lesions.",
+        "body_parts": [
+          "Abdomen",
+          "Liver"
+        ],
+        "imaging_modalities": [
+          "MRI"
+        ],
+        "subjects": "413",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2kpwv7gaaaaaaaaaaaae"
+      },
+      {
+        "id": "aaaadf2ktrpteaaaaaaaaaaaae",
+        "name": "Use Case 1 - KAUNO",
+        "description": "This dataset contains contrast-enhanced liver MRI scans acquired at the time of diagnosis from patients with cirrhosis or chronic hepatitis B and small (<2 cm) focal liver lesions.",
+        "body_parts": [
+          "Abdomen",
+          "Liver",
+          "Pelvis"
+        ],
+        "imaging_modalities": [
+          "MRI"
+        ],
+        "subjects": "202",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2ktrpteaaaaaaaaaaaae"
+      }
+    ]
+  },
+  {
+    "id": "aaaadfzusftsgaaaaaaaaaaaae",
+    "name": "Use Case 2&3 - Identification of liver metastases and LI-RADS classification based on CT images",
+    "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/biobank/aaaadfzusftsgaaaaaaaaaaaae",
+    "description": "Data from this Biobank can be used to investigate AI solutions to identify colorectal liver metastases (CRLM) in colorectal cancer from pre- and post-operative contrasted enhanced CT. Data from this Biobank can also be used to investigate AI solutions to improve the classification of LI-RADS intermediate liver lesions based on multiphasic and non-contrast enhanced CT images. Data from this Biobank can also be used to improve the classification of LI-RADS intermediate liver lesions (LR-2 to LR-4) based on contrasted and non-contrast enhanced CT images.",
+    "collections": [
+      {
+        "id": "aaaadf2b6arqqaaaaaaaaaaaae",
+        "name": "Use Case 3 - GUMED",
+        "description": "This dataset contains CT scans from patients with liver metastases from colorectal cancer, other focal or diffuse liver lesions, and normal livers. Each examination includes non-contrast images and contrast-enhanced arterial, venous, and delayed phases.",
+        "body_parts": [
+          "Abdomen",
+          "Chest"
+        ],
+        "imaging_modalities": [
+          "CT"
+        ],
+        "subjects": "991",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2b6arqqaaaaaaaaaaaae"
+      },
+      {
+        "id": "aaaadf2koc6pwaaaaaaaaaaaae",
+        "name": "Use Case 3 - UNIPI",
+        "description": "This dataset contains CT scans from patients with liver metastases from colorectal cancer, other focal or diffuse liver lesions, and normal livers. Each examination includes non-contrast images and contrast-enhanced arterial, venous, and delayed phases.",
+        "body_parts": [
+          "Abdomen",
+          "Liver"
+        ],
+        "imaging_modalities": [
+          "CT"
+        ],
+        "subjects": "1129",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2koc6pwaaaaaaaaaaaae"
+      },
+      {
+        "id": "aaaadf2kq5agwaaaaaaaaaaaae",
+        "name": "Use case 3 - UMEA",
+        "description": "This dataset contains CT scans from patients with liver metastases from colorectal cancer, other focal or diffuse liver lesions, and normal livers. Each examination includes non-contrast images and contrast-enhanced arterial, venous, and delayed phases.",
+        "body_parts": [
+          "Abdomen",
+          "Colon"
+        ],
+        "imaging_modalities": [
+          "CT"
+        ],
+        "subjects": "403",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2kq5agwaaaaaaaaaaaae"
+      },
+      {
+        "id": "aaaadf2ktxisoaaaaaaaaaaaae",
+        "name": "Use Case 3 - KAUNO",
+        "description": "This dataset contains CT scans from patients with liver metastases from colorectal cancer, other focal or diffuse liver lesions, and normal livers. Each examination includes non-contrast images and contrast-enhanced arterial, venous, and delayed phases.",
+        "body_parts": [
+          "Abdomen",
+          "Liver",
+          "Pelvis"
+        ],
+        "imaging_modalities": [
+          "CT"
+        ],
+        "subjects": "527",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2ktxisoaaaaaaaaaaaae"
+      }
+    ]
+  },
+  {
+    "id": "aaaadfzusdztoaaaaaaaaaaaae",
+    "name": "Use Case 4&5 - Identification of metastases and level of response from pelvic MRI in rectal cancer",
+    "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/biobank/aaaadfzusdztoaaaaaaaaaaaae",
+    "description": "Data from this Biobank can be used to investigate AI solutions to identify mesorectal lymph node metastases in pelvic MRI. Data from this Biobank can also be used to investigate AI solutions to predict the level of response to neoadjuvant radio(chemo) therapy (complete response, partial response or no response) based on primary MRI in rectal cancer for local staging and restaging.",
+    "collections": [
+      {
+        "id": "aaaadf2b6jhugaaaaaaaaaaaae",
+        "name": "Use Case 4&5 - GUMED",
+        "description": "This dataset contains pelvic MRI scans, including T2-weighted and diffusion-weighted (DWI) images, from patients with histopathology-confirmed rectal cancer. Scans were acquired before the start of neoadjuvant treatment or surgery.",
+        "body_parts": [
+          "Abdomen",
+          "Liver",
+          "Pelvis"
+        ],
+        "imaging_modalities": [
+          "MRI"
+        ],
+        "subjects": "198",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2b6jhugaaaaaaaaaaaae"
+      },
+      {
+        "id": "aaaadf2kopkggaaaaaaaaaaaae",
+        "name": "Use Case 4&5 - UNIPI",
+        "description": "This dataset contains pelvic MRI scans, including T2-weighted and diffusion-weighted (DWI) images, from patients with histopathology-confirmed rectal cancer. Scans were acquired before the start of neoadjuvant treatment or surgery.",
+        "body_parts": [
+          "Abdomen",
+          "Pelvis"
+        ],
+        "imaging_modalities": [
+          "MRI"
+        ],
+        "subjects": "169",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2kopkggaaaaaaaaaaaae"
+      },
+      {
+        "id": "aaaadf2krbx5uaaaaaaaaaaaae",
+        "name": "Use Case 4&5 - UMEA",
+        "description": "This dataset contains pelvic MRI scans, including T2-weighted and diffusion-weighted (DWI) images, from patients with histopathology-confirmed rectal cancer. Scans were acquired before the start of neoadjuvant treatment or surgery.",
+        "body_parts": [
+          "Abdomen",
+          "Pelvis"
+        ],
+        "imaging_modalities": [
+          "MRI"
+        ],
+        "subjects": "402",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2krbx5uaaaaaaaaaaaae"
+      },
+      {
+        "id": "aaaadf2kt3wtaaaaaaaaaaaaae",
+        "name": "Use Case 4&5 - KAUNO",
+        "description": "This dataset contains pelvic MRI scans, including T2-weighted and diffusion-weighted (DWI) images, from patients with histopathology-confirmed rectal cancer. Scans were acquired before the start of neoadjuvant treatment or surgery.",
+        "body_parts": [
+          "Abdomen",
+          "Pelvis"
+        ],
+        "imaging_modalities": [
+          "MRI"
+        ],
+        "subjects": "225",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2kt3wtaaaaaaaaaaaaae"
+      }
+    ]
+  },
+  {
+    "id": "aaaadfzusbnvwaaaaaaaaaaaae",
+    "name": "Use Case 6&8 - Automatic differentiation of benign and breast cancer subtypes on mammograms",
+    "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/biobank/aaaadfzusbnvwaaaaaaaaaaaae",
+    "description": "Data from this Biobank can be used to investigate AI solutions to improve the assessment of screening mammograms by automatically differentiating benign from malignant tumours. Data from this Biobank can also be used to investigate AI solutions to distinguish five molecular subtypes of invasive ductal breast carcinoma on mammography images. The five subtypes are: Luminal A, Luminal B (human epidermal growth factor receptor 2 (HER2) positive or negative), HER2 positive, and triple negative.",
+    "collections": [
+      {
+        "id": "aaaadf2b6q7f6aaaaaaaaaaaae",
+        "name": "Use Case 6&8 - GUMED",
+        "description": "This dataset contains mammography images of patients with breast cancer (all subtypes), benign breast lesions, or normal findings.",
+        "body_parts": [
+          "Breast"
+        ],
+        "imaging_modalities": [
+          "Mammography"
+        ],
+        "subjects": "3186",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2b6q7f6aaaaaaaaaaaae"
+      },
+      {
+        "id": "aaaadf2ko56zgaaaaaaaaaaaae",
+        "name": "Use Case 6&8 - UNIPI",
+        "description": "This dataset contains mammography images of patients with breast cancer (all subtypes), benign breast lesions, or normal findings.",
+        "body_parts": [
+          "Breast"
+        ],
+        "imaging_modalities": [
+          "Mammography"
+        ],
+        "subjects": "1262",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2ko56zgaaaaaaaaaaaae"
+      },
+      {
+        "id": "aaaadf2kqbqsyaaaaaaaaaaaae",
+        "name": "Use case 6&8 - FCRB",
+        "description": "This dataset contains mammography images of patients diagnosed with breast cancer.",
+        "body_parts": [
+          "Breast"
+        ],
+        "imaging_modalities": [
+          "Mammography"
+        ],
+        "subjects": "1489",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2kqbqsyaaaaaaaaaaaae"
+      },
+      {
+        "id": "aaaadf2krhaq6aaaaaaaaaaaae",
+        "name": "Use case 6&8 - UMEA",
+        "description": "This dataset contains mammography images of patients diagnosed with breast cancer (all subtypes), benign findings or normal images.",
+        "body_parts": [
+          "Breast"
+        ],
+        "imaging_modalities": [
+          "Mammography"
+        ],
+        "subjects": "3073",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2krhaq6aaaaaaaaaaaae"
+      },
+      {
+        "id": "aaaadf2krtqdkaaaaaaaaaaaae",
+        "name": "Use case 6&8 - UB",
+        "description": "This dataset contains mammography images of patients diagnosed with breast cancer.",
+        "body_parts": [
+          "Breast"
+        ],
+        "imaging_modalities": [
+          "Mammography"
+        ],
+        "subjects": "3620",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2krtqdkaaaaaaaaaaaae"
+      }
+    ]
+  },
+  {
+    "id": "aaaadfzurv2ieaaaaaaaaaaaae",
+    "name": "Use Case 7 - De-escalation of NST in patients with highly likely pCR",
+    "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/biobank/aaaadfzurv2ieaaaaaaaaaaaae",
+    "description": "Data from this Biobank can be used to investigate AI solutions that leverages breast baseline MRI data at diagnosis to identify the patients who are highly likely to achieve a pathological complete response (pCR), and so, implement de-escalating strategies in neoadjuvant systemic therapy (NST).",
+    "collections": [
+      {
+        "id": "aaaadf2kpeuugaaaaaaaaaaaae",
+        "name": "Use case 7 - UNIPI",
+        "description": "This dataset contains DCE MRI scans of patients diagnosed with breast cancer. Scans were acquired before the neoadjuvant treatment started.",
+        "body_parts": [
+          "Breast"
+        ],
+        "imaging_modalities": [
+          "MRI"
+        ],
+        "subjects": "212",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2kpeuugaaaaaaaaaaaae"
+      },
+      {
+        "id": "aaaadf2kqiao6aaaaaaaaaaaae",
+        "name": "Use case 7 - FCRB",
+        "description": "This dataset contains DCE.MRI scans of patients diagnosed with breast cancer. Scans were acquired before the neoadjuvant treatment started.",
+        "body_parts": [
+          "Breast"
+        ],
+        "imaging_modalities": [
+          "MRI"
+        ],
+        "subjects": "536",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2kqiao6aaaaaaaaaaaae"
+      },
+      {
+        "id": "aaaadf2krmzk4aaaaaaaaaaaae",
+        "name": "Use case 7 - UMEA",
+        "description": "This dataset contains DCE MRI scans of patients diagnosed with breast cancer. Scans were acquired before the neoadjuvant treatment started.",
+        "body_parts": [
+          "Breast"
+        ],
+        "imaging_modalities": [
+          "MRI"
+        ],
+        "subjects": "72",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2krmzk4aaaaaaaaaaaae"
+      },
+      {
+        "id": "aaaadf2krzzv6aaaaaaaaaaaae",
+        "name": "Use case 7 - UB",
+        "description": "This dataset contains DCE MRI scans of patients diagnosed with breast cancer. Scans were acquired before the neoadjuvant treatment started.",
+        "body_parts": [
+          "Breast"
+        ],
+        "imaging_modalities": [
+          "MRI"
+        ],
+        "subjects": "698",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2krzzv6aaaaaaaaaaaae"
+      },
+      {
+        "id": "aaaadf2kt7jqqaaaaaaaaaaaae",
+        "name": "Use Case 7 - KAUNO",
+        "description": "This dataset contains DCE.MRI scans of patients diagnosed with breast cancer. Scans were acquired before the neoadjuvant treatment started.",
+        "body_parts": [
+          "Breast"
+        ],
+        "imaging_modalities": [
+          "MRI"
+        ],
+        "subjects": "364",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadf2kt7jqqaaaaaaaaaaaae"
+      },
+      {
+        "id": "aaaadfzus3kheaaaaaaaaaaaae",
+        "name": "Use Case 7 - GUMED",
+        "description": "This dataset contains contrast enhanced MRI scans of patients diagnosed with breast cancer. Scans were acquired before the neoadjuvant treatment started.",
+        "body_parts": [
+          "Breast"
+        ],
+        "imaging_modalities": [
+          "MRI",
+          "RTSTRUCT"
+        ],
+        "subjects": "44",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/aaaadfzus3kheaaaaaaaaaaaae"
+      }
+    ]
+  },
+  {
+    "id": "NL_WORC",
+    "name": "Workflow for Optimal Radiomics Classification (WORC)",
+    "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/biobank/NL_WORC",
+    "description": "The WORC database consists in total of 930 patients composed of six datasets gathered at the Erasmus MC, consisting of patients with: 1) well-differentiated liposarcoma or lipoma (115 patients); 2) desmoid-type fibromatosis or extremity soft-tissue sarcomas (203 patients); 3) primary solid liver tumors, either malignant (hepatocellular carcinoma or intrahepatic cholangiocarcinoma) or benign (hepatocellular adenoma or focal nodular hyperplasia) (186 patients); 4) gastrointestinal stromal tumors (GISTs) and intra-abdominal gastrointestinal tumors radiologically resembling GISTs (246 patients); 5) colorectal liver metastases (77 patients); 6) lung metastases of metastatic melanoma (103 patients).",
+    "collections": [
+      {
+        "id": "NL_WORC_CRLM001",
+        "name": "WORC colorectal liver metastases",
+        "description": "This collection consists of 77 patients with a total of 93 colorectal liver metastases (CRLM) with either a 100% desmoplastic histopathological growth patterns (HGP) (N = 46) or 100% replacement HGP (N = 47). This collection is part of the WORC (Workflow for Optimal Radiomics Classification) dataset.",
+        "body_parts": [
+          "Liver"
+        ],
+        "imaging_modalities": [
+          "CT"
+        ],
+        "subjects": "77",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/NL_WORC_CRLM001"
+      },
+      {
+        "id": "NL_WORC_FS001",
+        "name": "WORC fibromatosis/Sarcoma",
+        "description": "This collection consists of 203 patients with either desmoid-type fibromatosis (DTF) (N = 72) or extremity soft-tissue sarcomas (STS), i.e, the non-DTF group (N = 131). This collection is part of the WORC (Workflow for Optimal Radiomics Classification) dataset.",
+        "body_parts": [
+          "Entire body"
+        ],
+        "imaging_modalities": [
+          "MRI"
+        ],
+        "subjects": "203",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/NL_WORC_FS001"
+      },
+      {
+        "id": "NL_WORC_GIST001",
+        "name": "WORC gastrointestinal stromal/intra-abdominal tumors",
+        "description": "This collection consists of 246 patients with either gastrointestinal stromal lesions (GISTs) (N = 125) or intra-abdominal tumors radiologically resembling GIST (non-GIST) (N = 122). This collection is part of the WORC (Workflow for Optimal Radiomics Classification) dataset.",
+        "body_parts": [
+          "Abdomen"
+        ],
+        "imaging_modalities": [
+          "CT"
+        ],
+        "subjects": "246",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/NL_WORC_GIST001"
+      },
+      {
+        "id": "NL_WORC_LIPO001",
+        "name": "WORC liposarcoma",
+        "description": "This collection consists of 115 patients with either a well-differentiated liposarcoma (WDLPS) (N = 58) or lipoma (N = 58). This collection is part of the WORC (Workflow for Optimal Radiomics Classification) dataset.",
+        "body_parts": [
+          "Entire body"
+        ],
+        "imaging_modalities": [
+          "MRI"
+        ],
+        "subjects": "115",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/NL_WORC_LIPO001"
+      },
+      {
+        "id": "NL_WORC_LM001",
+        "name": "WORC lung metastases",
+        "description": "This collection consists of 169 lung metastases of 103 patients with BRAF mutated (N = 51) or BRAF wild type (N = 52) metastatic melanoma. This collection is part of the WORC (Workflow for Optimal Radiomics Classification) dataset.",
+        "body_parts": [
+          "Lung"
+        ],
+        "imaging_modalities": [
+          "CT"
+        ],
+        "subjects": "103",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/NL_WORC_LM001"
+      },
+      {
+        "id": "NL_WORC_PLT001",
+        "name": "WORC primary liver tumor",
+        "description": "This collection consists of 186 patients with either a malignant (N = 94) or benign (N = 93) primary solid liver tumor. This collection is part of the WORC (Workflow for Optimal Radiomics Classification) dataset.",
+        "body_parts": [
+          "Liver"
+        ],
+        "imaging_modalities": [
+          "MRI"
+        ],
+        "subjects": "186",
+        "url": "https://molgenis.eibir-edc.org/menu/main/app-molgenis-app-biobank-explorer/#/collection/NL_WORC_PLT001"
+      }
+    ]
+  }
+]
