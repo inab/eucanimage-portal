@@ -436,3 +436,13 @@ main {
 .w-100 {
   width: 100%;
 }
+
+.link-catalogue {
+  color: #007b7f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link-catalogue:hover {
+  text-decoration: underline;
+}
