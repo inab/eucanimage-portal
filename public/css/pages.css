@@ -436,3 +436,117 @@ main {
 .w-100 {
   width: 100%;
 }
+
+.link-catalogue {
+  color: #007b7f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link-catalogue:hover {
+  text-decoration: underline;
+}
+
+#catalogueAccordion .accordion-item {
+  border: none;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+}
+
+#catalogueAccordion .accordion-header {
+  border-radius: 12px;
+}
+
+#catalogueAccordion .accordion-button {
+  background: #f2f2f2;
+  color: #123a60;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px !important;
+  padding: 20px 25px;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+#catalogueAccordion .accordion-button:not(.collapsed) {
+  background: #f2f2f2;
+  color: #123a60;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#catalogueAccordion .accordion-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(114, 114, 114, 0.2);
+}
+
+#catalogueAccordion .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23123a60'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  transition: transform 0.3s ease;
+}
+
+#catalogueAccordion .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23123a60'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+#catalogueAccordion .accordion-body {
+  padding: 25px;
+  background: #ffffff;
+  border-top: 2px solid #e4eef1;
+}
+
+#catalogueAccordion .accordion .accordion-item {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+}
+
+#catalogueAccordion .accordion .accordion-button {
+  background: #ffffff;
+  color: #123a60;
+  font-size: 0.95rem;
+  padding: 15px 20px;
+  border-radius: 8px !important;
+}
+
+#catalogueAccordion .accordion .accordion-button:not(.collapsed) {
+  background: #f0f8f9;
+  color: #123a60;
+  box-shadow: none;
+}
+
+#catalogueAccordion .accordion .accordion-button:hover {
+  background: #f0f8f9;
+  color: #007b7f;
+  transform: none;
+}
+
+#catalogueAccordion .accordion .accordion-body {
+  background: #ffffff;
+  padding: 20px;
+  border-top: 1px solid #e4eef1;
+}
+
+#catalogueAccordion .text-muted {
+  color: #6c757d !important;
+  font-size: 0.9rem;
+}
+
+#catalogueAccordion .btn-outline-primary {
+  color: #007b7f;
+  border-color: #007b7f;
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+#catalogueAccordion .btn-outline-primary:hover {
+  background: #007b7f;
+  border-color: #007b7f;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 123, 127, 0.2);
+}
