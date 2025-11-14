@@ -19,7 +19,4 @@ dataRespositoriesCard2Li2: "Hosted at"
 
 {{< explore/explore-summary >}}
 
-<!-- Hide these sections while making a decision.  -->
-<!-- {{< explore/explore-variables >}} -->
-
-<!-- {{< explore/explore-access >}} -->
+{{< explore/explore-access >}}
