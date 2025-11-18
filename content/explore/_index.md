@@ -13,10 +13,10 @@ dataRespositoriesCard2Li2: "Hosted at"
 ---
 {{< explore/page-intro >}}
 
+{{< explore/explore-catalogue >}}
+
 {{< explore/explore-repositories >}}
 
 {{< explore/explore-summary >}}
-
-{{< explore/explore-variables >}}
 
 {{< explore/explore-access >}}

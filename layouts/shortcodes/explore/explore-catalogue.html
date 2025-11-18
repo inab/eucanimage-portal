@@ -1,0 +1,101 @@
+<div class="section-repositories flex-container">
+    <div class="section-discovery-wrapper repositories-wrapper">
+        <h2>EuCanImage Imaging Catalogue</h2>
+
+        <p class="mb-4">
+            Below we provide a brief overview of the datasets: for more details, we recommend to visit the
+            <a href="https://molgenis.eibir-edc.org/#/?network=EUCANIMAGE" target="_blank" class="link-catalogue"><strong>EuCanImage Catalogue</strong></a>.
+        </p>
+
+        <div class="repository-table-container">
+
+            <!-- Accordion for Biobanks and Collections -->
+            <div class="accordion" id="catalogueAccordion">
+                {{ range $index, $biobank := .Site.Data.catalogue }}
+                {{ $biobankId := printf "biobank%d" $index }}
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="heading{{ $biobankId }}">
+                        <button class="accordion-button {{ if ne $index 0 }}collapsed{{ end }}" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#{{ $biobankId }}"
+                                aria-expanded="{{ if eq $index 0 }}true{{ else }}false{{ end }}"
+                                aria-controls="{{ $biobankId }}">
+                            <div class="w-100">
+                                <strong class="fs-5">{{ $biobank.name }}</strong>
+                                <br>
+                                <small class="text-muted">
+                                    Collections: {{ len $biobank.collections }} | Total Subjects:
+                                    {{ $total := 0 }}
+                                    {{ range $biobank.collections }}
+                                    {{ $subjects := int .subjects }}
+                                    {{ $total = add $total $subjects }}
+                                    {{ end }}
+                                    {{ $total }}
+                                </small>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="{{ $biobankId }}" class="accordion-collapse collapse {{ if eq $index 0 }}show{{ end }}"
+                         aria-labelledby="heading{{ $biobankId }}" data-bs-parent="#catalogueAccordion">
+                        <div class="accordion-body">
+                            <p>{{ $biobank.description }}</p>
+                            <p class="mb-3">
+                                <a href="{{ $biobank.url }}" target="_blank" class="link-catalogue">
+                                    <strong>View Biobank →</strong>
+                                </a>
+                            </p>
+
+                            <!-- Nested accordion for collections -->
+                            <div class="accordion" id="collections{{ $biobankId }}">
+                                {{ range $collIndex, $collection := $biobank.collections }}
+                                {{ $collectionId := printf "%s_collection%d" $biobankId $collIndex }}
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading{{ $collectionId }}">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#{{ $collectionId }}"
+                                                aria-expanded="false" aria-controls="{{ $collectionId }}">
+                                            <div class="w-100">
+                                                <strong>{{ $collection.name }}</strong>
+                                                <br>
+                                                <small class="text-muted">{{ $collection.subjects }} subjects</small>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="{{ $collectionId }}" class="accordion-collapse collapse"
+                                         aria-labelledby="heading{{ $collectionId }}" data-bs-parent="#collections{{ $biobankId }}">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p><strong>Body Parts:</strong></p>
+                                                    <ul>
+                                                        {{ range $collection.body_parts }}
+                                                        <li>{{ . }}</li>
+                                                        {{ end }}
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p><strong>Imaging Modalities:</strong></p>
+                                                    <ul>
+                                                        {{ range $collection.imaging_modalities }}
+                                                        <li>{{ . }}</li>
+                                                        {{ end }}
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p class="mt-2 mb-0">
+                                                <a href="{{ $collection.url }}" target="_blank" class="btn btn-sm btn-outline-primary">
+                                                    View Collection Details
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
